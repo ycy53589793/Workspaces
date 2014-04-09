@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- 编码   -->
+	<constant name="struts.i18n.encoding" value="UTF-8"/>
+	<!-- 物流订单管理查询action -->
+	<include file="com/oms/struts-oms.xml"></include>
+</struts>
