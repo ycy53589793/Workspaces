@@ -1,4 +1,5 @@
-<%@ page language="java" import="java.util.*" pageEncoding="ISO-8859-1"%>
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@ taglib prefix="sx" uri="/struts-dojo-tags"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -9,18 +10,22 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>My JSP 'index.jsp' starting page</title>
+    <title>供应链系统</title>
+    <sx:head/>
+    
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">    
 	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 	<meta http-equiv="description" content="This is my page">
-	<!--
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	-->
+	<!-- 
+	<link rel="stylesheet" type="text/css" href="%{tabsCss}">
+	 -->
   </head>
   
   <body>
-    This is my JSP page. <br>
+    <sx:tabbedpanel id="tabPanel" closeButton="tab">
+    	<sx:div theme="ajax" label="第一个标签"></sx:div>
+    </sx:tabbedpanel>
   </body>
 </html>
