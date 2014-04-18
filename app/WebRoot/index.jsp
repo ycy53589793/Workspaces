@@ -18,14 +18,19 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<meta http-equiv="expires" content="0">    
 	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 	<meta http-equiv="description" content="This is my page">
-	<!-- 
-	<link rel="stylesheet" type="text/css" href="%{tabsCss}">
-	 -->
+	
+	<script type="text/javascript" src="js/jquery-1.6.3.js"></script>
+	<script type="text/javascript">
+		dojo.event.topic.subscribe("/logisticOrderManager",function(data,type,e) {
+			
+	    });
+	</script>
   </head>
   
   <body>
-    <sx:tabbedpanel id="tabPanel" closeButton="tab">
-    	<sx:div theme="ajax" label="第一个标签"></sx:div>
-    </sx:tabbedpanel>
+  	<jsp:include page="head.jsp"/>
+  	<div id="result">
+	    
+    </div>
   </body>
 </html>

@@ -1,4 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@ taglib prefix="sx" uri="/struts-dojo-tags"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <%
 String path = request.getContextPath();
@@ -25,7 +26,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
     <p>
-    	<s:a>物流订单管理</s:a>&nbsp;&nbsp;&nbsp;&nbsp;
+    	<s:url id="logisticOrderAction" value="queryAction.action"></s:url>
+    	<sx:a href="%{logisticOrderAction}" notifyTopics="/logisticOrderManager" targets="result">物流订单管理</sx:a>&nbsp;&nbsp;&nbsp;&nbsp;
     </p>
   </body>
 </html>

@@ -15,11 +15,11 @@ create table order_ (
   trans_type_              varchar(255),--运输方式
   customer_                varchar(255),--客户
   order_time_              date,		--下单时间
-  separate_rule_id		   int,			--外键,分解策略
-  require_send_time_fm     date,		--要求发货时间从
-  require_send_time_to     date,		--要求发货时间到
-  require_receive_time_fm  date,		--要求送达时间从
-  require_receive_time_to  date,		--要求送达时间到
+  separate_rule_id_		   int,			--外键,分解策略
+  require_send_time_fm_    date,		--要求发货时间从
+  require_send_time_to_    date,		--要求发货时间到
+  require_receive_time_fm_ date,		--要求送达时间从
+  require_receive_time_to_ date,		--要求送达时间到
   shipper_                 varchar(255),--发货方
   location_fm_             varchar(255),--发货地点
   consignee_               varchar(255),--收货方

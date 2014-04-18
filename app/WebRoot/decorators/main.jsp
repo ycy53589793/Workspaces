@@ -1,4 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@ taglib prefix="sx" uri="/struts-dojo-tags"%>
 <%@ taglib prefix="decorator" uri="http://www.opensymphony.com/sitemesh/decorator"%>
 <%
 String path = request.getContextPath();
@@ -23,7 +24,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
-
   </head>
   
   <body>

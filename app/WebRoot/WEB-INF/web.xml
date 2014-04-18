@@ -11,7 +11,7 @@
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
   
-  <!-- 配置sitemesh,暂时不用, struts-cleanup、sitemesh要在struts2前面-->
+  <!-- 配置sitemesh,暂时不用, struts-cleanup、sitemesh要在struts2前面
   <filter>
     	<filter-name>struts-cleanup</filter-name>
     	<filter-class>org.apache.struts2.dispatcher.ActionContextCleanUp</filter-class>
@@ -20,12 +20,14 @@
         <filter-name>sitemesh</filter-name>
         <filter-class>com.opensymphony.module.sitemesh.filter.PageFilter</filter-class>
   </filter>
+  -->
   <!-- 配置struts2 -->
   <filter>
   		<filter-name>struts2</filter-name>
   		<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
   </filter>
   
+  <!-- 
   <filter-mapping>
     	<filter-name>struts-cleanup</filter-name>
     	<url-pattern>/*</url-pattern>
@@ -34,6 +36,7 @@
         <filter-name>sitemesh</filter-name>
         <url-pattern>/*</url-pattern>
   </filter-mapping>
+  -->
   <filter-mapping>
   		<filter-name>struts2</filter-name>
   		<url-pattern>/*</url-pattern>
