@@ -3,6 +3,12 @@
 <struts>
 	<!-- 编码   -->
 	<constant name="struts.i18n.encoding" value="UTF-8"/>
-	<!-- 物流订单管理查询action -->
+	<!-- oms系统 -->
 	<include file="com/oms/struts-oms.xml"></include>
+	<!-- bms系统 -->
+	<include file="com/bms/struts-bms.xml"></include>
+	<!-- wms系统 -->
+	<include file="com/wms/struts-wms.xml"></include>
+	<!-- tms系统 -->
+	<include file="com/tms/struts-tms.xml"></include>
 </struts>

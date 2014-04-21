@@ -21,8 +21,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	
 	<script type="text/javascript" src="js/jquery-1.6.3.js"></script>
 	<script type="text/javascript">
+		//alert("ccc");
 		dojo.event.topic.subscribe("/logisticOrderManager",function(data,type,e) {
-			
+			//alert("bbb");
+	    });
+	    <script type="text/javascript">
+		dojo.event.topic.subscribe("/aaa",function(data,type,e) {
+			//alert("aaa");
 	    });
 	</script>
   </head>

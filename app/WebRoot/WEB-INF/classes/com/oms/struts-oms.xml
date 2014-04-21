@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
 <struts>
+	<!-- 订单管理模块 -->
+	<include file="com/oms/order/struts-oms-order.xml"></include>
+	<!-- 商品模块 -->
+	<include file="com/oms/sku/struts-oms-sku.xml"></include>
+	<!-- 基础数据模块 -->
+	<include file="com/oms/data/struts-oms-data.xml"></include>
+	<!-- 作业订单模块 -->
+	<include file="com/oms/work/struts-oms-work.xml"></include>
+	
 	<!-- 物流订单管理查询action -->
-	<package name="orderQuery" extends="struts-default">
-		<action name="queryAction" class="com.oms.order.query.QueryAction" method="execute">
-			<result name="success">/order/query.jsp</result>
+	<package name="oms" extends="struts-default">
+		<action name="omsLoadOrderQueryPage" class="com.oms.OmsLoadPageAction" method="loadOrderQueryPage">
+			<result name="success">/order/query/order_query.jsp</result>
 		</action>
 	</package>
 </struts>

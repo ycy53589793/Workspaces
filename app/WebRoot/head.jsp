@@ -26,7 +26,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
     <p>
-    	<s:url id="logisticOrderAction" value="queryAction.action"></s:url>
+    	<s:url id="logisticOrderAction" value="omsLoadOrderQueryPage.action"></s:url>
     	<sx:a href="%{logisticOrderAction}" notifyTopics="/logisticOrderManager" targets="result">物流订单管理</sx:a>&nbsp;&nbsp;&nbsp;&nbsp;
     </p>
   </body>

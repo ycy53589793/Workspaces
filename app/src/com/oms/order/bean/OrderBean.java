@@ -1,7 +1,16 @@
 package com.oms.order.bean;
 
 import java.util.Date;
-
+/**
+ * Description:   订单头
+ * @author: 杨聪艺
+ * Create Date: 2014-4-21
+ * <pre>
+ * 修改记录:
+ * 修改后版本			修改人		修改日期			修改内容 
+ * 2014-4-21.1		杨聪艺		2014-4-21		create					
+ * </pre>
+ */
 public class OrderBean {
 	
 	private Long id;						//主键
@@ -45,10 +54,14 @@ public class OrderBean {
 	private String station;					//基地
 	private char editable;					//是否可编辑
 	private String temperatureLevel;		//温层
-	private char bmsVisitable;				//bms系统是否可见
-	private char tmsVisitable;				//tms系统是否可见
-	private char wmsVisitable;				//wms系统是否可见
+	private Integer separateRuleId;			//分解策略,外键
 	
+	public Integer getSeparateRuleId() {
+		return separateRuleId;
+	}
+	public void setSeparateRuleId(Integer separateRuleId) {
+		this.separateRuleId = separateRuleId;
+	}
 	public Long getId() {
 		return id;
 	}
@@ -295,24 +308,6 @@ public class OrderBean {
 	}
 	public void setTemperatureLevel(String temperatureLevel) {
 		this.temperatureLevel = temperatureLevel;
-	}
-	public char getBmsVisitable() {
-		return bmsVisitable;
-	}
-	public void setBmsVisitable(char bmsVisitable) {
-		this.bmsVisitable = bmsVisitable;
-	}
-	public char getTmsVisitable() {
-		return tmsVisitable;
-	}
-	public void setTmsVisitable(char tmsVisitable) {
-		this.tmsVisitable = tmsVisitable;
-	}
-	public char getWmsVisitable() {
-		return wmsVisitable;
-	}
-	public void setWmsVisitable(char wmsVisitable) {
-		this.wmsVisitable = wmsVisitable;
 	}
 
 }

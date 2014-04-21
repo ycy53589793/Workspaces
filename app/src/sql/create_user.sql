@@ -9,11 +9,11 @@ create table user_ (
   rec_status_              char(1),		--逻辑删除标记
   org_id_                  varchar(36),	--公司号
   username_				   varchar(36),	--用户名
-  password_				   int,			--密码
+  password_				   varchar(36),	--密码
   email_				   varchar(36),	--邮箱
   sex_					   char(1),		--性别
   birthday_				   date,		--出生日期
-  role_					   varchar(36),	--角色
+  role_					   int,			--角色
   age_					   int,			--年龄
   group_				   int,			--用户组
   primary key(id_)

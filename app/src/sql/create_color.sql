@@ -10,6 +10,6 @@ create table status_ (
   rec_status_              char(1),		--逻辑删除标记
   org_id_                  varchar(36),	--公司号
   color_name_			   varchar(36),	--状态名
-  color_value_			   varchar(36),	--颜色值,十六进制的颜色值    FFEEOO
+  color_value_			   int,			--颜色值,十六进制的颜色值    FFEEOO
   primary key(id_)
 );

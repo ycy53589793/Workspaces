@@ -19,7 +19,7 @@ create table sku_ (
   volume_				   double(12,4),--体积
   price_				   double(12,4),--单价
   amount_				   double(12,4),--金额
-  temperature_			   double(12,4),--温层
+  temperature_			   varchar(36),	--温层
   remark_				   varchar(255),--备注
   sku_type_				   varchar(36),	--商品类型
   production_date_		   date,		--生产日期
