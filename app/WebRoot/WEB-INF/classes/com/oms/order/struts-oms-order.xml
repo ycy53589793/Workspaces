@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- 物流订单管理查询action -->
+	<package name="order" extends="struts-default">
+		<action name="orderQueryAction" class="com.oms.order.query.OrderQueryAction" method="execute">
+			<result name="success" type="redirectAction">omsLoadOrderQueryPage</result>
+		</action>
+	</package>
+</struts>

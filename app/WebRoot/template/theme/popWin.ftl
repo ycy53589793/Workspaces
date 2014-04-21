@@ -1,0 +1,99 @@
+<html>
+	<script> 
+		 
+	</script>
+    <body>
+      <div>
+  		  <form action="">
+  		  	<select>
+			  <option value ="1">Volvo</option>
+			  <option value ="2">Saab</option>
+			  <option value="3">Opel</option>
+			  <option value="4">Audi</option>
+			</select>
+			<input type="text">
+			<input type="submit" value="查询">
+			<input type="reset" value="重置">
+  		  </form>
+  		  <table>
+  		  	<tr>
+  		  		<th>第一列</th>
+  		  		<th>第二列</th>
+  		  		<th>第三列</th>
+  		  		<th>第四列</th>
+  		  		<th>第五列</th>
+  		  	</tr>
+  		  	<tr>
+  		  		<td>第一列</td>
+  		  		<td>第二列</td>
+  		  		<td>第三列</td>
+  		  		<td>第四列</td>
+  		  		<td>第五列</td>
+  		  	</tr>
+  		  	<tr>
+  		  		<td>第一列</td>
+  		  		<td>第二列</td>
+  		  		<td>第三列</td>
+  		  		<td>第四列</td>
+  		  		<td>第五列</td>
+  		  	</tr>
+  		  	<tr>
+  		  		<td>第一列</td>
+  		  		<td>第二列</td>
+  		  		<td>第三列</td>
+  		  		<td>第四列</td>
+  		  		<td>第五列</td>
+  		  	</tr>
+  		  	<tr>
+  		  		<td>第一列</td>
+  		  		<td>第二列</td>
+  		  		<td>第三列</td>
+  		  		<td>第四列</td>
+  		  		<td>第五列</td>
+  		  	</tr>
+  		  	<tr>
+  		  		<td>第一列</td>
+  		  		<td>第二列</td>
+  		  		<td>第三列</td>
+  		  		<td>第四列</td>
+  		  		<td>第五列</td>
+  		  	</tr>
+  		  	<tr>
+  		  		<td>第一列</td>
+  		  		<td>第二列</td>
+  		  		<td>第三列</td>
+  		  		<td>第四列</td>
+  		  		<td>第五列</td>
+  		  	</tr>
+  		  	<tr>
+  		  		<td>第一列</td>
+  		  		<td>第二列</td>
+  		  		<td>第三列</td>
+  		  		<td>第四列</td>
+  		  		<td>第五列</td>
+  		  	</tr>
+  		  	<tr>
+  		  		<td>第一列</td>
+  		  		<td>第二列</td>
+  		  		<td>第三列</td>
+  		  		<td>第四列</td>
+  		  		<td>第五列</td>
+  		  	</tr>
+  		  	<tr>
+  		  		<td>第一列</td>
+  		  		<td>第二列</td>
+  		  		<td>第三列</td>
+  		  		<td>第四列</td>
+  		  		<td>第五列</td>
+  		  	</tr>
+  		  	<tr>
+  		  		<td>第一列</td>
+  		  		<td>第二列</td>
+  		  		<td>第三列</td>
+  		  		<td>第四列</td>
+  		  		<td>第五列</td>
+  		  	</tr>
+  		  </table>
+  	  </div>
+  </body>
+</html>
