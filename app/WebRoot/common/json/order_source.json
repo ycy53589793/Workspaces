@@ -1,0 +1,8 @@
+[
+	{
+		"byHand":"手工录入",
+		"byImport":"系统导入",
+		"byInterface":"接口传入",
+		"byOther":"其他方式"
+	}
+]

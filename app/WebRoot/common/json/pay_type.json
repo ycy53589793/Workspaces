@@ -1,0 +1,8 @@
+[
+	{
+		"pre_receive":"预收",
+		"pre_pay":"预付",
+		"receive":"实收",
+		"pay":"实付"
+	}
+]

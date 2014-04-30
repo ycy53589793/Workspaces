@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="omsCommon" extends="struts-default">
+		<!-- 加载订单查询页面 -->
+		<action name="omsLoadOrderQueryPage" class="com.oms.common.action.OmsLoadPageAction" method="loadOrderQueryPage">
+			<result name="success">/oms/order/query/order_query.jsp</result>
+		</action>
+		<!-- 加载查询结果页面 -->
+		<action name="omsLoadOrderResultPage" class="com.oms.common.action.OmsLoadPageAction" method="loadOrderResultPage">
+			<result name="success">/oms/order/result/order_result.jsp</result>
+		</action>
+		<!-- 加载分解策略查询页面 -->
+		<action name="omsLoadSeparateRuleQueryPage" class="com.oms.common.action.OmsLoadPageAction" method="loadSeparateRuleQueryPage">
+			<result name="success">/oms/data/query/separate_rule_query.jsp</result>
+		</action>
+		<!-- 加载分解策略查询结果页面 -->
+		<action name="omsLoadSeparateRuleResultPage" class="com.oms.common.action.OmsLoadPageAction" method="loadSeparateRuleResultPage">
+			<result name="success">/oms/data/result/separate_rule_result.jsp</result>
+		</action>
+		<!-- 加载作业类型查询页面 -->
+		<action name="omsLoadWorkTypeQueryPage" class="com.oms.common.action.OmsLoadPageAction" method="loadWorkTypeQueryPage">
+			<result name="success">/oms/data/query/work_type_query.jsp</result>
+		</action>
+		<!-- 加载作业类型查询结果页面 -->
+		<action name="omsLoadWorkTypeResultPage" class="com.oms.common.action.OmsLoadPageAction" method="loadWorkTypeResultPage">
+			<result name="success">/oms/data/result/work_type_result.jsp</result>
+		</action>
+	</package>
+</struts>
