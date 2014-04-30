@@ -1,19 +1,16 @@
 <html>
-	<script> 
-		 
-	</script>
     <body>
       <div>
-  		  <form action="">
+  		  <form action=''>
   		  	<select>
-			  <option value ="1">Volvo</option>
-			  <option value ="2">Saab</option>
-			  <option value="3">Opel</option>
-			  <option value="4">Audi</option>
+			  <option value ='1'>Volvo</option>
+			  <option value ='2'>Saab</option>
+			  <option value='3'>Opel</option>
+			  <option value='4'>Audi</option>
 			</select>
-			<input type="text">
-			<input type="submit" value="查询">
-			<input type="reset" value="重置">
+			<input type='text'>
+			<input type='submit' value='查询'>
+			<input type='reset' value='重置'>
   		  </form>
   		  <table>
   		  	<tr>

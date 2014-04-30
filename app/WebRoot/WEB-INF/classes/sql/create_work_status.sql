@@ -12,6 +12,7 @@ create table work_status_ (
   work_type_id_			   int,			--作业类型id
   status_id_			   int,			--状态id
   primary key(id_),
-  constraint fk_work_type_id_1 foreign key (work_type_id) references work_type_(id_),
-  constraint fk_status_1 foreign key (status_id) references status_(id_)
+  constraint fk_work_type_id_1 foreign key (work_type_id_) references work_type_(id_),
+  constraint fk_status_id_1 foreign key (status_id_) references status_(id_),
+  constraint fk_order_id_1 foreign key (order_id_) references order_(id_)
 );

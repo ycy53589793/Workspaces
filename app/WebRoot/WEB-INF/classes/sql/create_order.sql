@@ -10,7 +10,7 @@ create table order_ (
   org_id_                  varchar(36),	--公司号
   system_no_               varchar(36),	--系统号
   order_no_                varchar(36),	--物流订单号
-  order_type_              varchar(255),--订单类型
+  order_type_id_           int,			--订单类型
   priority_                varchar(36),	--优先级
   trans_type_              varchar(255),--运输方式
   customer_                varchar(255),--客户
@@ -43,5 +43,6 @@ create table order_ (
   pre_order_time_          date,		--预约时间
   pre_order_no_            varchar(36),	--预约单号
   primary key(id_),
-  constraint fk_separate_rule_id_1 foreign key (separate_rule_id) references separate_rule_(id_)
+  constraint fk_separate_rule_id_1 foreign key (separate_rule_id_) references separate_rule_(id_),
+  constraint fk_order_type_id_1 foreign key (order_type_id_) references order_type_(id_)
 );

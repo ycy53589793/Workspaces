@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
 <struts>
-	
+	<include file="com/oms/common/struts-oms-common.xml"></include>
+	<!-- 物流订单管理action -->
+	<package name="separateRule" extends="omsCommon">
+		<!-- 分解策略查询 -->
+		<action name="separateRuleQueryAction" class="com.oms.data.action.SeparateRuleQueryAction" method="execute">
+			<result name="success" type="redirectAction">omsLoadSeparateRuleResultPage</result>
+		</action>
+		<!-- 作业类型查询 
+		<action name="workTypeQueryAction" class="com.oms.data.action.WorkTypeQueryAction" method="execute">
+			<result name="success" type="redirectAction"></result>
+		</action>-->
+	</package>
 </struts>

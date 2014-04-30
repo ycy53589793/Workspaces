@@ -18,5 +18,6 @@ create table status_detail_ (
   visitable_			   char(1),		--是否可见
   remark_				   varchar(255),--备注
   primary key(id_),
-  constraint fk_status_id_1 foreign key (status_id_) references status_(id_)
+  constraint fk_status_id_1 foreign key (status_id_) references status_(id_),
+  constraint fk_order_id_5 foreign key (order_id_) references order_(id_)
 );

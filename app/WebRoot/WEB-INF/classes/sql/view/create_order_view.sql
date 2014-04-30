@@ -48,9 +48,16 @@ create or replace order_view as (
 		  sv.name_					 as status_name_,				--状态名称
 		  sv.color_name_			 as color_name_,				--状态颜色
 		  sv.color_value_			 as color_value_				--状态颜色,十六进制
-	from order_ o,separate_rule_ s,status_view sv
+	from order_ o,separate_rule_ s,status_view sv,order_type_ ot
    where o.org_id_=s.org_id_
 	 and o.separate_rule_id_=s.id_
+	 and o.org_id_=ot.org_id_
+	 and o.order_type_id_=ot.id_
+	 and o.id_=sv.order_id_
+	 and o.org_id_=sv.org_id_
+	 and sv.is_current_status_='Y'
 	 and o.rec_status_=0
 	 and s.rec_status_=0
+	 and sv.rec_status_=0
+	 and ot.rec_status_=0
 );

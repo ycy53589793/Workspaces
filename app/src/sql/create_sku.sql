@@ -28,5 +28,5 @@ create table sku_ (
   maker_				   varchar(255),--制造商
   bar_code_				   varchar(36),	--条码
   primary key(id_),
-  constraint fk_order_id_2 foreign key (order_id_) references order_(id_)
+  constraint fk_order_id_4 foreign key (order_id_) references order_(id_)
 );

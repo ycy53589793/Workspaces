@@ -12,8 +12,6 @@
 	
 	<!-- 物流订单管理查询action -->
 	<package name="oms" extends="struts-default">
-		<action name="omsLoadOrderQueryPage" class="com.oms.OmsLoadPageAction" method="loadOrderQueryPage">
-			<result name="success">/order/query/order_query.jsp</result>
-		</action>
+		
 	</package>
 </struts>

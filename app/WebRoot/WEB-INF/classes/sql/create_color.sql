@@ -11,5 +11,6 @@ create table status_ (
   org_id_                  varchar(36),	--公司号
   color_name_			   varchar(36),	--状态名
   color_value_			   int,			--颜色值,十六进制的颜色值    FFEEOO
-  primary key(id_)
+  primary key(id_),
+  constraint order_id_3 foreign key (order_id_) references order_(id_)
 );

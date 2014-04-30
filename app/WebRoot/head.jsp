@@ -13,11 +13,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     
     <title>导航页</title>
     
-	<meta http-equiv="pragma" content="no-cache">
-	<meta http-equiv="cache-control" content="no-cache">
-	<meta http-equiv="expires" content="0">    
-	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-	<meta http-equiv="description" content="This is my page">
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
@@ -26,8 +21,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
     <p>
-    	<s:url id="logisticOrderAction" value="omsLoadOrderQueryPage.action"></s:url>
-    	<sx:a href="%{logisticOrderAction}" notifyTopics="/logisticOrderManager" targets="result">物流订单管理</sx:a>&nbsp;&nbsp;&nbsp;&nbsp;
+    	<s:url id="logisticOrder" value="omsLoadOrderQueryPage.action"></s:url>
+    	<sx:a href="%{logisticOrder}" targets="result">物流订单管理</sx:a>&nbsp;&nbsp;&nbsp;&nbsp;
+    	<s:url id="separateRule" value="omsLoadSeparateRuleQueryPage"></s:url>
+    	<sx:a href="%{separateRule}" targets="result">分解策略管理</sx:a>&nbsp;&nbsp;&nbsp;&nbsp;
+    	<sx:a>作业类型管理</sx:a>&nbsp;&nbsp;&nbsp;&nbsp;
+    	<sx:a>订单拆分管理</sx:a>&nbsp;&nbsp;&nbsp;&nbsp;
+    	<sx:a>订单合并管理</sx:a>&nbsp;&nbsp;&nbsp;&nbsp;
+    	<sx:a>状态配置管理</sx:a>&nbsp;&nbsp;&nbsp;&nbsp;
+    	<sx:a>报表配置管理</sx:a>&nbsp;&nbsp;&nbsp;&nbsp;
+    	<sx:a>导入配置管理</sx:a>&nbsp;&nbsp;&nbsp;&nbsp;
+    	<sx:a>基础数据管理</sx:a><!-- 颜色 用户 状态 -->
     </p>
   </body>
 </html>
