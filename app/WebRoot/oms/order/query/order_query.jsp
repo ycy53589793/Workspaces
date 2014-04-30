@@ -20,7 +20,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
     <form action="orderQueryAction.action" method="post">
-    	<div id="toolBar">
+    	<div id="toolBar" style="text-align:left;">
     		<sx:submit type="button" label="查询" targets="result" notifyTopics="/complete"/>
     		<input type="reset" value="重置"/>
     	</div>
